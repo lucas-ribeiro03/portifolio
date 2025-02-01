@@ -3,6 +3,13 @@ const toggleBar = document.querySelector(".toggle-bar");
 const toggleBall = document.querySelector(".toggle-ball");
 const moon = document.querySelector(".fa-moon");
 const sun = document.querySelector(".fa-sun");
+const backTopButton = document.querySelector(".back-top");
+
+backTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+  });
+});
 
 toggleBar.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {

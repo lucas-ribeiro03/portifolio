@@ -30,6 +30,25 @@ body {
   color: var(--main-text);
 }
 
+.back-top {
+  width: 30px;
+  height: 30px;
+  background-color: var(--links-btn);
+  color: #000;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 25px;
+  border-radius: 50%;
+  border: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
