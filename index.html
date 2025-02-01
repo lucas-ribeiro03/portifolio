@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="dark-mode">
+    <nav data-aos="zoom-in">
+        <div class="left-side">
+            <a href="">
+                <p>Lucas <span>Ribeiro</span></p>
+            </a>
+        </div>
+
+        <div class="switch-language">
+            <p id="language-en">EN</p>
+            <div class="toggle-bar-language">
+                <div class="toggle-ball-language left"></div>
+            </div>
+            <p id="language-pt">PT</p>
+        </div>
+
+        <div class="right-side">
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#about" id="about-link">About</a></li>
+                <li><a href="#skills" id="skills-link">Skills</a></li>
+                <li><a href="#projects" id="projects-link">Projects</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+                <div class="light-dark-mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <div class="toggle-bar">
+                        <div class="toggle-ball left"></div>
+                    </div>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <header data-aos="zoom-in">
+        <div class="header" id="about">
+            <div class="left-header-side">
+                <img src="assets/profile-pic.jpg" alt="">
+            </div>
+
+            <div class="right-header-side">
+                <div class="top-right-header">
+                    <h1 id="header-name">Hey! My name is <span id="header-span-name">Lucas Ribeiro</span></h1>
+                </div>
+                <div class="middle-right-header">
+                    <p id="header-job">I am a <span class="span-header" id="header-span-job"></span></p>
+                </div>
+
+                <div class="header-description">
+                    <p id="header-desc">Hello, I'm <span id="header-desc-name">Lucas</span>, developer from Rio de
+                        Janeiro, welcome to my portfolio! I am a Computer Science student at Unicarioca, currently in
+                        the third semester. The technologies I am most proficient in are <span
+                            id="header-desc-tech">HTML, CSS, JavaScript, React, Node</span>, and with them, I aim to
+                        create simple and efficient solutions to big problems.</p>
+                </div>
+
+                <div class="cv-button">
+                    <button id="cv-btn">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" data-aos="fade-up">
+        <h1 id="skills-title">Skills</h1>
+        <div class="skills-section">
+            <div class="design" id="skills-design">
+                <h2 id="design-skill">Design</h2>
+                <img src="assets/logos/html.svg" alt="">
+                <img src="assets/logos/cssold.svg" alt="">
+            </div>
+
+            <div class="languages">
+                <h2 id="languages-skill">Languages</h2>
+                <img src="assets/logos/javascript.svg" alt="">
+            </div>
+
+            <div class="framework" id="skills-framework">
+                <h2 id="framework-skill">Frameworks</h2>
+                <img src="assets/logos/reactjs-icon.svg" alt="">
+                <img src="assets/logos/nodejs-icon.svg" alt="">
+                <img src="assets/logos/express.svg" class="express" alt="">
+            </div>
+
+            <div class="database" id="skills-database">
+                <h2 id="database-skill">Databases</h2>
+                <img src="assets/logos/mysql.svg" alt="">
+                <img src="assets/logos/mongob.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h1 id="projects-title">Projects</h1>
+        <div class="projects-section">
+            <div class="card-project">
+                <img src="assets/abstract.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-1">See more</button>
+                    <button class="see-project" id="see-project-1">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/bonsai.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-2">See more</button>
+                    <button class="see-project" id="see-project-2">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/brazilicious.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-3">See more</button>
+                    <button class="see-project" id="see-project-3">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/ohstudio.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-4">See more</button>
+                    <button class="see-project" id="see-project-4">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/form-cep.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-5">See more</button>
+                    <button class="see-project" id="see-project-5">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/weather-map.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-6">See more</button>
+                    <button class="see-project" id="see-project-6">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/conversor.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-7">See more</button>
+                    <button class="see-project" id="see-project-7">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/todo-list.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-8">See more</button>
+                    <button class="see-project" id="see-project-8">View project</button>
+                </div>
+            </div>
+
+            <div class="card-project">
+                <img src="assets/agenda.png" alt="">
+                <div class="card-hover">
+                    <button class="see-more" id="see-more-9">See more</button>
+                    <button class="see-project" id="see-project-9">View project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-footer">
+            <div class="social-media" data-aos="zoom-in-left">
+                <a href="https://www.instagram.com/mercurykhs/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/lucas-ribeiro03"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://w.app/6f0ebo"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/lucas-ribeiro-7280a730a/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="footer-menu" data-aos="zoom-in">
+                <ul>
+                    <li><a href="#home" id="home-footer">Home</a></li>
+                    <li><a href="#about" id="about-footer">About</a></li>
+                    <li><a href="#skills" id="skills-footer">Skills</a></li>
+                    <li><a href="#projects" id="projects-footer">Projects</a></li>
+                    <li><a href="#contact" id="contact-footer">Contact</a></li>
+                </ul>
+            </div>
+
+            <div data-aos="zoom-in-right" class="copyright" id="copyright">© 2025, Lucas Ribeiro. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/language.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scroll-animation.js"></script>
+
+</body>
+
+</html>
