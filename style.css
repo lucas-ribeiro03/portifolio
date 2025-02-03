@@ -433,3 +433,102 @@ nav {
   transform: translateX(calc(100% + 5px));
   transition: ease 0.4s;
 }
+
+.nav-mobile-menu,
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  nav {
+    padding: 25px;
+    width: 400px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 30px;
+  }
+
+  .right-side ul {
+    display: none;
+  }
+
+  .left-side a p {
+    font-size: 16px;
+  }
+
+  .nav-mobile-menu {
+    display: block;
+  }
+
+  .nav-mobile-menu button {
+    background-color: var(--background-color);
+    font-size: 32px;
+    padding: 10px;
+    border: none;
+    color: var(--main-text);
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-header-side img {
+    display: none;
+  }
+
+  .right-header-side .cv-button {
+    display: flex;
+  }
+
+  .top-right-header h1 {
+    font-size: 17px;
+  }
+
+  .middle-right-header p {
+    font-size: 12px;
+  }
+
+  .header-description p {
+    font-size: 12px;
+  }
+
+  .skills-title {
+    font-size: 15px;
+  }
+
+  .skills-section {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 300px 300px;
+  }
+
+  .skills-section h2 {
+    font-size: 25px;
+  }
+
+  .projects-title h1 {
+    font-size: 25px;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+  }
+}
