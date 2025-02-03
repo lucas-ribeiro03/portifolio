@@ -481,7 +481,7 @@ nav {
     height: 100vh;
     z-index: 10000;
     background-color: var(--background-color);
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
   .mobile-menu ul {
