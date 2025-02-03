@@ -70,6 +70,12 @@ nav {
   color: var(--highlights);
 }
 
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .right-side ul {
   display: flex;
   gap: 38px;
@@ -572,6 +578,12 @@ nav {
     height: 20px;
     cursor: pointer;
     position: relative;
+  }
+
+  .light-dark-mode {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
   }
 
   .toggle-ball.left {
