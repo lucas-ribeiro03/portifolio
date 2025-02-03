@@ -488,6 +488,10 @@ nav {
     display: flex;
   }
 
+  .header {
+    justify-content: center;
+  }
+
   .top-right-header h1 {
     font-size: 17px;
   }
@@ -507,6 +511,7 @@ nav {
   .skills-section {
     grid-template-columns: 200px 200px;
     grid-template-rows: 300px 300px;
+    justify-content: center;
   }
 
   .skills-section h2 {
@@ -523,12 +528,16 @@ nav {
   }
 
   .contact-footer {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  .social-media {
+    text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
-    text-align: center;
-    padding: 15px;
+    margin: auto 0;
   }
 }
