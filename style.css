@@ -47,6 +47,7 @@ body {
   padding: 25px;
   border-radius: 50%;
   border: none;
+  z-index: 1111111;
 }
 
 nav {
@@ -453,7 +454,7 @@ nav {
     padding: 30px;
   }
 
-  .right-side ul {
+  .right-side ul li {
     display: none;
   }
 
@@ -562,5 +563,34 @@ nav {
     align-items: center;
     justify-content: center;
     margin: auto 0;
+  }
+
+  .toggle-bar {
+    width: 45px;
+    background-color: var(--borders-and-details);
+    border-radius: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .toggle-ball.left {
+    width: 20px;
+    height: 18px;
+    background-color: var(--links-btn);
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(0);
+    transition: ease 0.4s;
+  }
+
+  .toggle-ball.right {
+    width: 20px;
+    height: 18px;
+    background-color: var(--links-btn);
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(calc(100% + 5px));
+    transition: ease 0.4s;
   }
 }

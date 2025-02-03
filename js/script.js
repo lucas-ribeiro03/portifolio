@@ -18,6 +18,7 @@ toggleBar.addEventListener("click", () => {
     body.classList.remove("dark-mode");
     sun.style.color = "#e3db04";
     moon.style.color = "#111";
+    console.log("oi");
     toggleBall.classList.replace("left", "right");
   } else if (body.classList.contains("light-mode")) {
     body.classList.toggle("dark-mode");
