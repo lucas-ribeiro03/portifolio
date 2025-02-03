@@ -371,6 +371,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 60px 20px;
+  background-color: var(--background-color);
   box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.3);
   gap: 70px;
 }
