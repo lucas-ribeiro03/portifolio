@@ -182,6 +182,11 @@ nav {
   cursor: pointer;
 }
 
+.cv-button a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
 #skills {
   align-items: center;
   color: var(--main-text);
