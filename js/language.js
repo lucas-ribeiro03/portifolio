@@ -61,7 +61,8 @@ const languages = {
     "header-job": "I am a <span></span>",
     "header-desc":
       "Hello, I'm <span>Lucas</span>, developer from Rio de Janeiro, welcome to my portfolio! I am a Computer Science student at Unicarioca, currently in the third semester. The technologies I am most proficient in are <span>HTML, CSS, JavaScript, React, Node</span>, and with them, I aim to create simple and efficient solutions to big problems.",
-    "cv-btn": "Download CV",
+    "cv-btn":
+      "<a href='curriculo_lucas_ribeiro.pdf' download> Download CV </a>",
     "skills-title": "Skills",
     "design-skill": "Design",
     "languages-skill": "Languages",
@@ -84,8 +85,8 @@ const languages = {
       "<a target='_blank' href='https://github.com/lucas-ribeiro03/oh.studio'>See more</a>",
     "see-project-4":
       "<a  target='_blank' href='https://lucas-ribeiro03.github.io/oh.studio/'>View project</a>",
-    "see-more-5": "<a target='_blank' href='404.html'>See more</a>",
-    "see-project-5": "<a target='_blank' href='404.html'>View project</a>",
+    "see-more-5": "<a target='_blank' href='404/404.html'>See more</a>",
+    "see-project-5": "<a target='_blank' href='404/404.html'>View project</a>",
     "see-more-6":
       "<a target='_blank' href='https://github.com/lucas-ribeiro03/weather-map'>See more</a>",
     "see-project-6":
@@ -100,7 +101,7 @@ const languages = {
       "<a target='_blank' href='https://tasklist-cib6koqbo-lucas-projects-ce0d404a.vercel.app'>View project</a>",
     "see-more-9":
       "<a target='_blank' href='https://github.com/lucas-ribeiro03/agenda-js'>See more</a>",
-    "see-project-9": "<a target='_blank' href='404.html'>View project</a>",
+    "see-project-9": "<a target='_blank' href='404/404.html'>View project</a>",
     "home-footer": "Home",
     "about-footer": "About",
     "skills-footer": "Skills",
