@@ -68,24 +68,39 @@ const languages = {
     "framework-skill": "Frameworks",
     "database-skill": "Databases",
     "projects-title": "Projects",
-    "see-more-1": "See more",
-    "see-project-1": "View project",
-    "see-more-2": "See more",
-    "see-project-2": "View project",
-    "see-more-3": "See more",
-    "see-project-3": "View project",
-    "see-more-4": "See more",
-    "see-project-4": "View project",
-    "see-more-5": "See more",
-    "see-project-5": "View project",
-    "see-more-6": "See more",
-    "see-project-6": "View project",
-    "see-more-7": "See more",
-    "see-project-7": "View project",
-    "see-more-8": "See more",
-    "see-project-8": "View project",
-    "see-more-9": "See more",
-    "see-project-9": "View project",
+    "see-more-1":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/abstract'>See more</a>",
+    "see-project-1":
+      "<a target='_blank' href='https://lucas-ribeiro03.github.io/abstract/'>View project</a>",
+    "see-more-2":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/bonsai'>See more</a>",
+    "see-project-2":
+      "<a target='_blank' href='https://lucas-ribeiro03.github.io/bonsai/'>View project</a>",
+    "see-more-3":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/brazilicious'>See more</a>",
+    "see-project-3":
+      "<a target='_blank'  href='https://lucas-ribeiro03.github.io/brazilicious/'>View project</a>",
+    "see-more-4":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/oh.studio'>See more</a>",
+    "see-project-4":
+      "<a  target='_blank' href='https://lucas-ribeiro03.github.io/oh.studio/'>View project</a>",
+    "see-more-5": "<a target='_blank' href=''>See more</a>",
+    "see-project-5": "<a target='_blank' href=''>View project</a>",
+    "see-more-6":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/weather-map'>See more</a>",
+    "see-project-6":
+      "<a target='_blank' href='https://lucas-ribeiro03.github.io/weather-map/'>View project</a>",
+    "see-more-7":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/currency-exchange'>See more</a>",
+    "see-project-7":
+      "<a target='_blank' href='https://lucas-ribeiro03.github.io/currency-exchange/'>View project</a>",
+    "see-more-8":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/tasklist'>See more</a>",
+    "see-project-8":
+      "<a target='_blank' href='https://tasklist-cib6koqbo-lucas-projects-ce0d404a.vercel.app'>View project</a>",
+    "see-more-9":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/agenda-js'>See more</a>",
+    "see-project-9": "<a target='_blank' href='404.html'>View project</a>",
     "home-footer": "Home",
     "about-footer": "About",
     "skills-footer": "Skills",

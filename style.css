@@ -336,6 +336,11 @@ nav {
   transform: scale(0);
 }
 
+.card-hover button a {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
 .card-hover:hover {
   background-color: #0a0a0aae;
   backdrop-filter: blur(0.2em);
