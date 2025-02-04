@@ -17,7 +17,7 @@ const languages = {
     "header-job": "Eu sou um <span></span>",
     "header-desc":
       "Olá, eu sou <span>Lucas</span>, desenvolvedor do Rio de Janeiro, bem-vindo ao meu portfólio! Sou estudante de Ciência da Computação na Unicarioca, atualmente no terceiro semestre. As tecnologias em que sou mais proficiente são <span>HTML, CSS, JavaScript, React, Node</span>, e com elas, busco criar soluções simples e eficientes para grandes problemas.",
-    "cv-btn": "Baixar CV",
+    "cv-btn": "Baixar Curriculo",
     "skills-title": "Habilidades",
     "design-skill": "Design",
     "languages-skill": "Linguagens",
