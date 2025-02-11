@@ -133,6 +133,7 @@ nav {
 .left-header-side img {
   border-radius: 50%;
   border: 25px solid var(--borders-and-details);
+  width: 600px;
 }
 
 .right-header-side {
