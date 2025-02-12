@@ -17,8 +17,7 @@ const languages = {
     "header-job": "Eu sou um <span></span>",
     "header-desc":
       "Olá, eu sou <span>Lucas</span>, desenvolvedor do Rio de Janeiro, bem-vindo ao meu portfólio! Sou estudante de Ciência da Computação na Unicarioca, atualmente no terceiro semestre. As tecnologias em que sou mais proficiente são <span>HTML, CSS, JavaScript, React, Node</span>, e com elas, busco criar soluções simples e eficientes para grandes problemas.",
-    "cv-btn":
-      "<a href='curriculo_lucas_ribeiro.pdf' download> Baixar Curriculo </a>",
+    "cv-btn": "<a href='curriculo.pdf' download> Baixar Curriculo </a>",
     "skills-title": "Habilidades",
     "design-skill": "Design",
     "languages-skill": "Linguagens",
@@ -77,8 +76,7 @@ const languages = {
     "header-job": "I am a <span></span>",
     "header-desc":
       "Hello, I'm <span>Lucas</span>, developer from Rio de Janeiro, welcome to my portfolio! I am a Computer Science student at Unicarioca, currently in the third semester. The technologies I am most proficient in are <span>HTML, CSS, JavaScript, React, Node</span>, and with them, I aim to create simple and efficient solutions to big problems.",
-    "cv-btn":
-      "<a href='curriculo_lucas_ribeiro.pdf' download> Download CV </a>",
+    "cv-btn": "<a href='curriculo.pdf' download> Download CV </a>",
     "skills-title": "Skills",
     "design-skill": "Design",
     "languages-skill": "Languages",
