@@ -99,8 +99,10 @@ const languages = {
       "<a target='_blank' href='https://github.com/lucas-ribeiro03/oh.studio'>See more</a>",
     "see-project-4":
       "<a  target='_blank' href='https://lucas-ribeiro03.github.io/oh.studio/'>View project</a>",
-    "see-more-5": "<a target='_blank' href='404/404.html'>See more</a>",
-    "see-project-5": "<a target='_blank' href='404/404.html'>View project</a>",
+    "see-more-5":
+      "<a target='_blank' href='https://github.com/lucas-ribeiro03/nex-client'>See more</a>",
+    "see-project-5":
+      "<a target='_blank' href='https://nex-client-z7kq.vercel.app'>View project</a>",
     "see-more-6":
       "<a target='_blank' href='https://github.com/lucas-ribeiro03/weather-map'>See more</a>",
     "see-project-6":
