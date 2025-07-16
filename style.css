@@ -257,6 +257,7 @@ footer {
   right: 15px;
   transition: 0.25s;
   animation: showButton 0.1s;
+  display: none;
 }
 
 .back-to-top:hover {
