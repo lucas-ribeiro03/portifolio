@@ -3,9 +3,24 @@ window.addEventListener("scroll", () => {
   const button = document.querySelector(".back-to-top");
   if (window.scrollY > 250) {
     button.style.display = "flex";
+    button.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   } else {
     button.style.display = "none";
   }
+});
+
+document.querySelector(".menu").addEventListener("click", () => {
+  document.querySelector(".nav-container ul").style.display = "flex";
+  document.querySelector(".menu").style.display = "none";
+  document.querySelector(".close-menu").style.display = "block";
+});
+
+document.querySelector(".close-menu").addEventListener("click", () => {
+  document.querySelector(".nav-container ul").style.display = "none";
+  document.querySelector(".menu").style.display = "block";
+  document.querySelector(".close-menu").style.display = "none";
 });
 
 document.querySelector(".switch-theme").addEventListener("click", () => {
