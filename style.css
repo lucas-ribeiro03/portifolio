@@ -92,6 +92,7 @@ nav ul li a:hover {
   background: #717171;
   border-radius: 50rem;
   padding: 2px 7px;
+  position: relative;
 }
 
 .switch-theme .ball {
@@ -105,6 +106,18 @@ nav ul li a:hover {
 
 .switch-theme .ball.active {
   transform: translateX(50%);
+}
+
+.theme-icon {
+  position: absolute;
+}
+
+.sun {
+  right: -20px;
+}
+
+.moon {
+  left: -20px;
 }
 
 header {
