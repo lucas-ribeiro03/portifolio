@@ -4,7 +4,7 @@ import gsap from "gsap";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import { useGSAP } from "@gsap/react";
-import _ScrollTrigger, { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
 const Navbar = () => {
