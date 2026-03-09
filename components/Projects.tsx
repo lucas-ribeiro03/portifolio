@@ -1,3 +1,4 @@
+"use client";
 import { projects } from "@/data/projects";
 import Container from "./Container";
 import ProjectCard from "./ProjectCard";
@@ -68,6 +69,7 @@ const Projects = () => {
               projectDesc={project.descriptiton}
               projectName={project.name}
               projectPrint={project.coverImage}
+              techsUsed={project.techsUsed}
               key={project.name}
             />
           ))}

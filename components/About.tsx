@@ -32,16 +32,14 @@ const About = () => {
           ref={paragraphRef}
           className="paragraph text-lg lg:text-xl text-center lg:text-left lg:px-25"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolor
-          fuga impedit adipisci! Dolorem perferendis cumque sequi doloribus
-          debitis impedit. Itaque id laborum illo quisquam veniam similique
-          natus amet beatae! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Cum dolor fuga impedit adipisci! Dolorem perferendis cumque
-          sequi doloribus debitis impedit. Itaque id laborum illo quisquam
-          veniam similique natus amet beatae! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Cum dolor fuga impedit adipisci! Dolorem
-          perferendis cumque sequi doloribus debitis impedit. Itaque id laborum
-          illo quisquam veniam similique natus amet beatae!
+          Com 21 anos e cursando o 5º período de Ciências da Computação na
+          UniCarioca, sou um desenvolvedor determinado e apaixonado por resolver
+          problemas. Sou fluente inglês formado pelo CNA. Minhas habilidades
+          incluem React, JavaScript, Next.js, Tailwind CSS, HTML e CSS,
+          complementadas por uma forte capacidade de comunicação interpessoal.
+          Busco oportunidades para aplicar meu conhecimento e crescer
+          contribuindo para minha equipe profissionalmente em ambientes
+          dinâmicos.
         </p>
       </div>
     </Container>

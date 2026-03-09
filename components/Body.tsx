@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import About from "./About";

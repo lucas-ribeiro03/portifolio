@@ -1,3 +1,5 @@
+"use client";
+
 type GitIconProps = {} & React.ComponentProps<"svg">;
 
 const GitIcon = ({ ...props }: GitIconProps) => {

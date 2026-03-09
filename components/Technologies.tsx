@@ -1,3 +1,4 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 import { useRef, useEffect, useState } from "react";
 import Container from "./Container";
@@ -24,6 +25,7 @@ const Technologies = () => {
     { name: "Tailwind", image: "/images/TailwindCSS.svg" },
     { name: "Next", image: "/images/Next.svg" },
     { name: "Node", image: "/images/Node.svg" },
+    { name: "Typescript", image: "/images/typescript.svg" },
   ];
 
   // Detectar tamanho da tela

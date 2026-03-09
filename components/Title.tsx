@@ -1,3 +1,4 @@
+"use client";
 type TitleProps = {
   children: React.ReactNode;
 } & React.ComponentProps<"h1">;

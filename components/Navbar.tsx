@@ -1,9 +1,11 @@
+"use client";
+
 import gsap from "gsap";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import { useGSAP } from "@gsap/react";
 import _ScrollTrigger, { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 const Navbar = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,9 +18,9 @@ const Navbar = () => {
       onEnter: () => {
         gsap.to(navRef.current, {
           flexDirection: "column",
-          margin: "20px",
           width: "fit-content",
           height: "100%",
+          top: 0,
           borderRadius: "10px",
           justifyContent: "space-around",
           duration: 0.6,

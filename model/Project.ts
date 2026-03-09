@@ -3,4 +3,5 @@ export type Project = {
   descriptiton: string;
   url: string;
   coverImage: string;
+  techsUsed: string[];
 };

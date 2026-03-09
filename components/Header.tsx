@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
@@ -6,6 +8,7 @@ import LinkedinIcon from "./LinkedinIcon";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { DownloadIcon } from "lucide-react";
 
 const Header = () => {
   const shadowRef = useRef(null);
@@ -67,20 +70,33 @@ const Header = () => {
           />
         </p>
 
-        <div className="flex gap-4 mt-8">
+        <div className="grid grid-cols-2 gap-2  justify-between lg:flex lg:gap-4 mt-8">
           <Link
             href={"https://github.com/lucas-ribeiro03"}
-            className="bg-zinc-900/70 p-3 lg:p-4 rounded-xl hover:bg-zinc-900 duration-300 transition hover:scale-110 group border-2 border-purple-500"
+            className="bg-zinc-900/70 p-3 lg:p-4 rounded-xl hover:bg-zinc-900 duration-300 transition hover:scale-110 group border-2 border-purple-500 flex justify-center"
           >
             <GitIcon className="w-8 lg:w-10 invert group-hover:fill-purple-700 group-hover:invert-0 transition duration-300" />
           </Link>
 
           <Link
             href={"https://www.linkedin.com/in/lucasribeirodevfrontend/"}
-            className="bg-zinc-900/70 p-3 lg:p-4 rounded-xl hover:bg-zinc-900 duration-300 transition hover:scale-110 group border-2 border-purple-500"
+            className="bg-zinc-900/70 p-3 lg:p-4 rounded-xl hover:bg-zinc-900 duration-300 transition hover:scale-110 group border-2 border-purple-500 flex justify-center"
           >
             <LinkedinIcon className="w-8 lg:w-10 invert group-hover:fill-purple-700 group-hover:invert-0 transition duration-300" />
           </Link>
+          <a
+            className="col-span-2 flex text-xl relative border-2 border-purple-700 px-9 py-3 rounded-xl overflow-hidden group cursor-pointer items-center lg:col-span-1"
+            download="Lucas-Ribeiro-CV.pdf"
+            href="/cv/lucas-ribeiro-cv.pdf"
+            target="_blank"
+          >
+            <span className="scale-x-0 origin-left bg-purple-700 absolute inset-0 duration-500 transition-transform group-hover:scale-x-100 group-hover:z-10 flex items-center justify-center rounded-lg">
+              <DownloadIcon />
+            </span>
+            <span className="relative group-hover:opacity-0 transition-opacity duration-500">
+              Curriculo
+            </span>
+          </a>
         </div>
       </aside>
 

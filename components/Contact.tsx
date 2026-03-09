@@ -1,3 +1,5 @@
+"use client";
+
 import { SendHorizonalIcon } from "lucide-react";
 import Container from "./Container";
 import Input from "./Input";
@@ -9,8 +11,15 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useForm } from "react-hook-form";
+import z from "zod";
+import { createContactSchema } from "@/schema/contactSchema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import sendMessageAcion from "@/actions/send-message-action";
+import { toast, ToastContainer } from "react-toastify";
 
 gsap.registerPlugin(ScrollTrigger);
+type ContactFormData = z.infer<typeof createContactSchema>;
 
 const Contact = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -84,59 +93,120 @@ const Contact = () => {
     { scope: containerRef },
   );
 
-  return (
-    <Container id="contato">
-      <div ref={containerRef} className="w-full px-4 sm:px-6 md:px-0">
-        <Title className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-12">
-          Entre em contato
-        </Title>
-        <div className="flex flex-col md:flex-row justify-around w-full items-center gap-8 md:gap-12">
-          <form
-            ref={formRef}
-            action=""
-            className="w-full md:w-1/2 flex gap-4 flex-col"
-          >
-            <div className="contact-input">
-              <Input
-                id="name"
-                labelText="Seu nome"
-                type="text"
-                placeholder="Insira seu nome"
-              />
-            </div>
-            <div className="contact-input">
-              <Input
-                id="email"
-                labelText="Seu email"
-                type="email"
-                placeholder="Insira seu email"
-              />
-            </div>
-            <div className="contact-input">
-              <TextArea
-                id="message"
-                placeholder="Insira sua mensagem"
-                labelText="Sua mensagem"
-              ></TextArea>
-            </div>
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(createContactSchema),
+    mode: "onChange",
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
 
-            <button className="contact-button bg-purple-700 px-8 sm:px-12 py-2 sm:py-3 transition duration-300 cursor-pointer rounded-xl hover:scale-105 hover:bg-purple-800 flex gap-2 sm:gap-3 text-center justify-center items-center text-sm sm:text-base">
-              Enviar mensagem
-              <SendHorizonalIcon size={18} />
-            </button>
-          </form>
-          <div
-            ref={lottieRef}
-            className="w-full md:w-1/2 flex justify-center md:justify-end"
-          >
-            <Lottie
-              className="w-64 sm:w-80 md:w-96 lg:w-xl"
-              animationData={contact}
-            />
+  const {
+    handleSubmit,
+    register,
+    reset,
+    formState: { isSubmitting, isValid, errors },
+  } = form;
+
+  const onSubmit = async (data: ContactFormData) => {
+    console.log("onsubmit");
+    const formData = new FormData();
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("message", data.message);
+
+    const result = await sendMessageAcion(formData);
+    if (result?.success === true) {
+      toast.success(result.message);
+      reset();
+    } else {
+      toast.error(result?.message);
+    }
+  };
+
+  return (
+    <>
+      <ToastContainer pauseOnHover={false} position="top-center" />
+      <Container id="contato">
+        <div ref={containerRef} className="w-full px-4 sm:px-6 md:px-0">
+          <Title className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-12">
+            Entre em contato
+          </Title>
+          <div className="flex flex-col md:flex-row justify-around w-full items-center gap-8 md:gap-12">
+            <form
+              ref={formRef}
+              className="w-full md:w-1/2 flex gap-4 flex-col"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <div className="contact-input">
+                <Input
+                  id="name"
+                  labelText="Seu nome"
+                  type="text"
+                  placeholder="Insira seu nome"
+                  disabled={isSubmitting}
+                  {...register("name")}
+                />
+                {errors.name && (
+                  <span className="text-purple-700 text-sm font-bold ml-3">
+                    {errors.name.message}
+                  </span>
+                )}
+              </div>
+              <div className="contact-input">
+                <Input
+                  id="email"
+                  labelText="Seu email"
+                  type="email"
+                  placeholder="Insira seu email"
+                  disabled={isSubmitting}
+                  {...register("email")}
+                />
+                {errors.email && (
+                  <span className="text-purple-700 text-sm font-bold ml-3">
+                    {errors.email.message}
+                  </span>
+                )}
+              </div>
+              <div className="contact-input">
+                <TextArea
+                  id="message"
+                  placeholder="Insira sua mensagem"
+                  labelText="Sua mensagem"
+                  disabled={isSubmitting}
+                  {...register("message")}
+                ></TextArea>
+                {errors.message && (
+                  <span className="text-purple-700 text-sm font-bold ml-3">
+                    {errors.message.message}
+                  </span>
+                )}
+              </div>
+
+              <button
+                type="submit"
+                disabled={!isValid || isSubmitting}
+                className="contact-button bg-purple-700 px-8 sm:px-12 py-2 sm:py-3 transition duration-300 cursor-pointer rounded-xl hover:scale-105 hover:bg-purple-800 flex gap-2 sm:gap-3 text-center justify-center items-center text-sm sm:text-base disabled:bg-zinc-700 disabled:cursor-not-allowed"
+              >
+                Enviar mensagem
+                <SendHorizonalIcon size={18} />
+              </button>
+            </form>
+            <div
+              ref={lottieRef}
+              className="w-full md:w-1/2 flex justify-center md:justify-end"
+            >
+              <Lottie
+                className="w-64 sm:w-80 md:w-96 lg:w-xl"
+                animationData={contact}
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 
