@@ -1,6 +1,6 @@
 "use client";
 
-import { SendHorizonalIcon } from "lucide-react";
+import { Loader2Icon, SendHorizonalIcon } from "lucide-react";
 import Container from "./Container";
 import Input from "./Input";
 import TextArea from "./TextArea";
@@ -190,8 +190,20 @@ const Contact = () => {
                 disabled={!isValid || isSubmitting}
                 className="contact-button bg-purple-700 px-8 sm:px-12 py-2 sm:py-3 transition duration-300 cursor-pointer rounded-xl hover:scale-105 hover:bg-purple-800 flex gap-2 sm:gap-3 text-center justify-center items-center text-sm sm:text-base disabled:bg-zinc-700 disabled:cursor-not-allowed"
               >
-                Enviar mensagem
-                <SendHorizonalIcon size={18} />
+                {isSubmitting ? (
+                  <>
+                    <span className="flex gap-3">
+                      Enviando Mensagem...
+                      <Loader2Icon className="animate-spin duration-700" />
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span className="flex gap-3">
+                      Enviar Mensagem <SendHorizonalIcon />
+                    </span>
+                  </>
+                )}
               </button>
             </form>
             <div
