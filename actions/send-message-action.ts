@@ -20,7 +20,7 @@ export default async function sendMessageAcion(formData: FormData) {
 
   try {
     const response = await fetch(
-      "http://localhost:3000/api/message-from-user",
+      "https://portifolio-alpha-three-67.vercel.app/api/message-from-user",
       {
         method: "POST",
         headers: {
