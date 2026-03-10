@@ -34,7 +34,7 @@ export default async function sendMessageAcion(formData: FormData) {
     console.log(data);
 
     if (response.ok) {
-      return { success: true, status: 200 };
+      return { success: true, message: "Mensagem enviada", status: 200 };
     }
   } catch (e) {
     console.log(e);
