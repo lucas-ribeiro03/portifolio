@@ -38,6 +38,7 @@ const Projects = () => {
           duration: 0.7,
           delay: index * 0.15,
           ease: "power3.out",
+          clearProps: "transform",
           scrollTrigger: {
             trigger: card,
             start: "top 88%",

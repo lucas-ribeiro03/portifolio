@@ -4,7 +4,7 @@
 import { ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
 
-type ProjectCard = {
+type ProjectCardProps = {
   projectPrint: string;
   projectName: string;
   projectDesc: string;
@@ -19,13 +19,13 @@ const ProjectCard = ({
   projectName,
   projectPrint,
   techsUsed,
-}: ProjectCard) => {
+}: ProjectCardProps) => {
   return (
-    <div className="project-card cursor-pointer border-2 border-purple-700 w-full max-w-sm sm:max-w-md lg:max-w-none flex flex-col items-center rounded-xl gap-3 sm:gap-4 hover:transform hover:scale-105 transition pb-4">
+    <div className="project-card cursor-pointer border-2 border-purple-700 w-full max-w-sm sm:max-w-md lg:max-w-none flex flex-col items-center rounded-xl gap-3 sm:gap-4 hover:scale-105 transition duration-300 pb-4">
       <img
         src={projectPrint}
         alt="Capa do projeto"
-        className="w-full h-40 sm:h-48 lg:h-60 object-cover rounded-t-[9px]"
+        className="w-full h-40 sm:h-48 lg:h-60 object-cover rounded-xl"
       />
       <h1 className="font-bold text-2xl sm:text-3xl px-4 text-center">
         {projectName}
