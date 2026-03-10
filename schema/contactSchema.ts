@@ -4,7 +4,7 @@ export const createContactSchema = z.object({
   name: z
     .string()
     .min(1, "Nome é obrigatório")
-    .min(-3, "Nome deve conter pelo menos 3 caractéres")
+    .min(3, "Nome deve conter pelo menos 3 caractéres")
     .max(50, "Nome pode conter no máximo 50 caractéres"),
 
   email: z
