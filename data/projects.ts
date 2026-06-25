@@ -26,15 +26,16 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "ListenIT",
-    coverImage: "/images/capa_listen.png",
+    name: "Bolão da Copa",
+    coverImage: "/images/capa_bolao.png",
     descriptiton:
-      "Landing Page para aplicativo fictício de streaming de músicas",
-    url: "https://github.com/lucas-ribeiro03/ListenIt",
+      "Aplicação web para grupos de amigos disputarem um bolão de apostas esportivas. Os usuários enviam palpites para as partidas de cada rodada e concorrem em um ranking geral baseado nos acertos.",
+    url: "https://github.com/lucas-ribeiro03/bolao",
     techsUsed: [
-      "/images/HTML5.svg",
-      "/images/CSS3.svg",
-      "/images/JavaScript.svg",
+      "/images/Next.svg",
+      "/images/TailwindCSS.svg",
+      "/images/typescript.svg",
+      "/images/postgreSQL.svg",
     ],
   },
 ];
