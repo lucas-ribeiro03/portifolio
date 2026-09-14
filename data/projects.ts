@@ -2,16 +2,16 @@ import { Project } from "@/model/Project";
 
 export const projects: Project[] = [
   {
-    name: "Blog",
-    coverImage: "/images/capa_blog.png",
+    name: "Gerenciador de depósito",
+    coverImage: "/images/capa-dp.png",
     descriptiton:
-      "Blog com painel admin contendo CRUD completo de posts, controle de likes, filtro por pesquisa, categorias por posts, ranking de categorias mais curtidas, entre outras funcionalidades. Blog desenvolvido utilizando NextJs",
+      "Aplicação estilo e-commerce modelada para gerenciar e realizar pedidos de diversos tipos de negócios. Conta com dashboard de pedidos entre outras estatísticas. Painel admin completo.",
     url: "https://github.com/lucas-ribeiro03/blog",
     techsUsed: [
-      "/images/React.svg",
       "/images/Next.svg",
       "/images/TailwindCSS.svg",
       "/images/typescript.svg",
+      "/images/postgreSQL.svg",
     ],
   },
   {
