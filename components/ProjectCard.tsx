@@ -1,6 +1,5 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
 import { ArrowUpRightFromSquare } from "lucide-react";
 import Link from "next/link";
 
@@ -50,6 +49,7 @@ const ProjectCard = ({
       <Link
         href={githubLink}
         className="flex gap-2 px-8 sm:px-12 py-2 sm:py-4 bg-purple-700 rounded-lg hover:bg-purple-900 transition text-sm sm:text-base"
+        target="_blank"
       >
         Repositório <ArrowUpRightFromSquare size={18} />
       </Link>

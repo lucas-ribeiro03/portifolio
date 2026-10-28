@@ -6,7 +6,7 @@ export const projects: Project[] = [
     coverImage: "/images/capa-dp.png",
     descriptiton:
       "Aplicação estilo e-commerce modelada para gerenciar e realizar pedidos de diversos tipos de negócios. Conta com dashboard de pedidos entre outras estatísticas. Painel admin completo.",
-    url: "https://github.com/lucas-ribeiro03/blog",
+    url: "https://github.com/lucas-ribeiro03/gerenciador-de-deposito",
     techsUsed: [
       "/images/Next.svg",
       "/images/TailwindCSS.svg",

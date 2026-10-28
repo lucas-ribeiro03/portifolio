@@ -72,6 +72,7 @@ const Header = () => {
 
         <div className="grid grid-cols-2 gap-2  justify-between lg:flex lg:gap-4 mt-8">
           <Link
+            target="_blank"
             href={"https://github.com/lucas-ribeiro03"}
             className="bg-zinc-900/70 p-3 lg:p-4 rounded-xl hover:bg-zinc-900 duration-300 transition hover:scale-110 group border-2 border-purple-500 flex justify-center"
           >
@@ -79,6 +80,7 @@ const Header = () => {
           </Link>
 
           <Link
+            target="_blank"
             href={"https://www.linkedin.com/in/lucasribeirodevfrontend/"}
             className="bg-zinc-900/70 p-3 lg:p-4 rounded-xl hover:bg-zinc-900 duration-300 transition hover:scale-110 group border-2 border-purple-500 flex justify-center"
           >
@@ -86,9 +88,9 @@ const Header = () => {
           </Link>
           <a
             className="col-span-2 flex text-xl relative border-2 border-purple-700 px-9 py-3 rounded-xl overflow-hidden group cursor-pointer items-center lg:col-span-1"
-            download="Lucas-Ribeiro-CV.pdf"
-            href="/cv/Lucas_Ribeiro_CV.pdf"
+            href="/cv/Lucas-Ribeiro-CV.pdf"
             target="_blank"
+            onClick={() => console.log("ola")}
           >
             <span className="scale-x-0 origin-left bg-purple-700 absolute inset-0 duration-500 transition-transform group-hover:scale-x-100 group-hover:z-10 flex items-center justify-center rounded-lg">
               <DownloadIcon />

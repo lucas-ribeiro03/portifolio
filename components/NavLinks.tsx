@@ -48,8 +48,7 @@ const NavLinks = () => {
       <li>
         <a
           className="relative border-2 border-purple-700 px-9 py-3 rounded-xl  overflow-hidden group cursor-pointer"
-          download="Lucas-Ribeiro-CV.pdf"
-          href="/cv/Lucas_Ribeiro_CV.pdf"
+          href="/cv/Lucas-Ribeiro-CV.pdf"
           target="_blank"
         >
           <span className="scale-x-0 origin-left bg-purple-700 absolute inset-0 duration-500 transition-transform group-hover:scale-x-100 group-hover:z-10 flex items-center justify-center rounded-lg">
